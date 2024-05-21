@@ -1,0 +1,82 @@
+package com;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class Practica {
+	public static void main(String[] args) {
+		
+     String linea= "";
+     int n=0;
+     int n1=0;
+     String a="";
+     String b="";
+     
+     String[] dia = { "uno", "dos", "tres", "cuatro","cinco", "seis", "siete", "ocho", "nueve","diez","once","doce", 
+				"trece", "catorce", "quince", "dieciseis", "diecisiete", "dieciocho", "diecinueve", "veite", "veintiuno", "veintidos", "veintitres",
+				"veinticuatro", "veinticinco", "veintiseis","veintisiete", "veintiocho", "veintinueve", "trinta", "treinta y uno" };
+     String[] mes = { "enero", "febrero", "marzo", "abril","mayo", "junio", " julio", "agosto", "septiembre","octubre","noviembre","diciembre"};
+		try {
+			
+			File fichero= new File("C:\\Users\\Jfran\\Desktop\\documen.txt");
+			FileReader fr= new FileReader(fichero);
+			
+			
+			
+			BufferedReader buffer = new BufferedReader(fr);
+			while((linea=buffer.readLine()) !=null){
+				System.out.println(linea);
+			n=Integer.parseInt(linea.substring(0, 2));
+			n1=Integer.parseInt(linea.substring(2, 4));
+			
+			
+			
+		
+			
+			
+			for (int j = 0; j < dia.length; j++) {
+				for (int i = 0; i < mes.length; i++) {
+					//System.out.println(mes[i]);
+					if(i==n1-1&&j==n-1) {
+						//a=j;
+						
+						System.out.println(dia[j] + " de "+ (mes[i]));
+						File fichero1= new File("C:\\Users\\Jfran\\OneDrive\\Escritorio\\bloce.txt");
+						
+						FileWriter lapiz =new FileWriter(fichero1);
+						lapiz.write(dia[j]+mes[i]);
+						lapiz.close();
+					}
+						//System.out.print();
+						
+					}
+					
+				}
+				
+					
+					
+					
+			} 
+				
+				
+				
+			
+			
+				
+				
+			
+				
+				
+				
+			
+		}	catch(Exception ex) {
+			System.out.println("Error");
+			//ex.printStackTrace();
+		}
+			}
+	}
+
+	
+

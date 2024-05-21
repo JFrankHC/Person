@@ -1,0 +1,41 @@
+package com;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Principal {
+	
+	public static void main(String[] args) {
+		
+		
+		List<String> lista = new ArrayList<String>();
+		List<String> lista2 = new ArrayList<String>();
+		
+		
+		//Agregar elementos a la lista 
+		lista.add("Hola");
+		lista.add("Hola");
+		lista.add("Hola");
+		lista.add("Hola");
+		lista.add("que");
+		lista.add("Hola");
+		lista2.add("Hola");
+		lista2.add("Hola");
+		lista2.add("Hola");
+		lista2.add("Hola");
+		lista2.add("Hola");
+		lista2.add("Hola");
+		
+		// para saber si ya  se guardaron se puede Imprimir su tamaño
+		System.out.println(lista.size());
+		//O imprimir la lista 
+		System.out.println(lista);
+		//Busca un elemento dentro de la lista, devuelve true o false 
+		System.out.println(lista.contains("que"));
+		
+		System.out.println(lista.equals(lista2));
+		
+		
+	}
+
+}

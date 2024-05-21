@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.Ventas&apos; to &apos;com.msventas&apos;&#x0D;&#x0A;- Original project: &apos;msventas&apos;&#x0D;&#x0A;- Original element: &apos;msventas/src/main/java/com.Ventas&apos;&#x0D;&#x0A;- Renamed element: &apos;msventas/src/main/java/com.msventas&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.Ventas&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.Ventas" name="com.msventas" qualified="false" references="true" stamp="1690904786126" textual="false" version="1.0"/>
+</session>

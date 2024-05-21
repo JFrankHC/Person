@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="msempleados"/>
+<aop-project name="demo"/>
+<aop-project name="msventas"/>
+<aop-project name="crud"/>
+<aop-project name="frank"/>
+<aop-project name=" ms_productos"/>
+<aop-project name="demos"/>
+<aop-project name="mscliente"/>
+<aop-project name="ms-productos"/>
+<aop-project name="Persistence"/>
+</aop-reference-model>

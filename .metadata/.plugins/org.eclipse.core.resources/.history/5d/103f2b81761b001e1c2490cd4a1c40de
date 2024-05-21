@@ -1,0 +1,27 @@
+package com;
+
+import java.util.Scanner;
+
+public class ej4 {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Teclea la palabra: ");
+		String pal = sc.nextLine();
+		System.out.println("Teclea la letra que deseas buscar: ");
+		String letra = sc.nextLine();
+		int longitud = pal.length();
+		String reversa = "";
+		
+		
+		for (int i = longitud - 1; i >= 0; i--) {
+			int j=0;
+			letra = letra + pal.charAt(i);
+			if (pal.equals(letra)) {
+				j++;
+			}
+			System.out.println("El caracter "+ letra+ " se encontró "+ j+ " veces");
+	}
+
+}
+}

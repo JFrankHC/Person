@@ -1,0 +1,38 @@
+package com;
+
+import java.util.Scanner;
+
+public class ej11 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Ingrese valor: ");
+		int valor = sc.nextInt();
+		
+		
+		
+		for (int fila = 1; fila <= valor; fila++) {
+			for (int columna = 1; columna <= valor; columna++)
+				System.out.print("*");
+			
+			System.out.println();
+		}
+
+
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Teclea el ancho y largo ");
+//		int tam = sc.nextInt();
+////		
+//
+//		for (int i = 1; i <= tam; i++) {
+//			
+//			for (int j = 1; j <= tam; j++) 
+//				System.out.println(" * ");
+//			
+//				
+//			    System.out.println();
+//
+//		}
+	}
+
+}

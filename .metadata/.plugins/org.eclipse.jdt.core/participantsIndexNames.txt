@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\Jfran\Documents\workspace-sts-3.9.13.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1649900745.index
+\JDBC_JFHC\src\main\java
+C:\Users\Jfran\Documents\workspace-sts-3.9.13.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2346235353.index
+\CRUDHibernate\src\main\resourses

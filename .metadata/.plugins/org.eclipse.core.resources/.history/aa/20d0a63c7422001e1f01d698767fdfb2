@@ -1,0 +1,80 @@
+package com;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class EjercicioListas {
+	public static void main(String[] args) {
+		
+		
+		int seleccion=0;
+		Scanner sc =new Scanner(System.in);
+		
+		List<Contacto> contactos= new ArrayList<Contacto> ();
+		Contacto a=new Contacto();
+		//Contacto nombre = null;
+		String nombre, telefono, direccion, correo;
+		do {
+			System.out.println("1.Agregar");
+			System.out.println("2.Buscar");
+			System.out.println("3.Editar");
+			System.out.println("4.Eliminar");
+			System.out.println("5.Mostrar");
+			System.out.println("6.salir");
+			
+			
+			seleccion= sc.nextInt();
+			System.out.println(seleccion);
+			switch(seleccion) {
+			
+			case 1:
+				for (int i = 0; i < 4; i++) {
+					if(i==1) {
+					System.out.println("Ingrese el nombre");
+					nombre=sc.nextLine();
+					a.setNombre(nombre);
+					contactos.add(a);
+					}
+					System.out.println(contactos);
+				}
+				//System.out.println(contactos);
+				
+		
+				
+				System.out.println(a);
+				System.out.println("Ingrese el telefono");
+				System.out.println("Ingrese la direccion");
+				System.out.println("Ingrese el correo");
+				
+				break;
+				
+				
+				
+			case 2:
+				System.out.println("Usted eligió Buscar ");
+				break;
+			case 3:
+				System.out.println("Usted eligió Editar");
+				break;	
+			case 4:
+				System.out.println("Usted eligió Eliminar");
+				break;	
+			case 5:
+				System.out.println("Usted eligió Mostrar");
+				break;	
+			default:
+				System.out.println("ha salido");
+			//Resolver aqui 
+			}
+			
+			
+			
+			
+		}while(seleccion>0 && seleccion <=5);
+		
+		
+		
+	}
+
+}

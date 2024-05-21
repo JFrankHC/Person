@@ -1,0 +1,113 @@
+package com;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class EjercicioListas {
+	public static void main(String[] args) {
+		
+		
+		int seleccion=0;
+		Scanner sc =new Scanner(System.in);
+		
+		List<Contacto> contactos= new ArrayList<Contacto> ();
+		
+		//Contacto nombre = null;
+		String nombre, telefono, direccion, correo;
+		
+		do {
+			System.out.println("1.Agregar");
+			System.out.println("2.Buscar");
+			System.out.println("3.Editar");
+			System.out.println("4.Eliminar");
+			System.out.println("5.Mostrar");
+			System.out.println("6.salir");
+			
+			
+			seleccion= sc.nextInt();
+			System.out.println(seleccion);
+			switch(seleccion) {
+			
+			case 1:
+				sc.nextLine();
+					System.out.println("Ingrese el nombre");
+					nombre=sc.nextLine();
+					System.out.println("Ingrese el telefono");
+					telefono=sc.nextLine();
+					System.out.println("Ingrese la direccion");
+					direccion=sc.nextLine();
+					System.out.println("Ingrese un correo");
+					correo=sc.nextLine();
+					Contacto a=new Contacto(nombre,telefono,direccion,correo);
+					contactos.add(a);
+					break;
+					
+					//System.out.println(contactos);
+						
+							
+			case 2:
+				sc.nextLine();
+				System.out.println("Introduzca el nombre que desea buscar ");
+				nombre=sc.nextLine();
+				Contacto con=null;
+				for (int i = 0; i < contactos.size(); i++) {
+					if (contactos.get(i).getNombre().equals(nombre)) {
+						con= contactos.get(i);
+						break;
+					}
+				}
+					if(con!=null) {
+						System.out.println(con);
+					}else {
+						System.out.println("No existe");
+					}
+					
+					
+				
+				break;
+			case 3:
+				System.out.println("Introduzca el nombre que desea editar ");
+				nombre=sc.nextLine();
+				Contacto con1=null;
+				for (int i = 0; i < contactos.size(); i++) {
+					if (contactos.get(i).getNombre().equals(nombre)) {
+						con1= contactos.get(i);
+						
+						
+						
+					}
+					if(con1!=null) {
+						System.out.println("Introduzca el nuevo nombre ");
+						nombre=sc.nextLine();
+						Contacto con11=null;
+						con11= contactos.get(i);
+						System.out.println(contactos.set(i, con11));
+					}else {
+						System.out.println("No existe");
+					}break;
+				}
+					
+
+				break;	
+			case 4:
+				System.out.println("Usted eligió Eliminar");
+				break;	
+			case 5:
+				System.out.println("Usted eligió Mostrar");
+				break;	
+			default:
+				System.out.println("ha salido");
+			//Resolver aqui 
+			}
+			
+			
+			
+			
+		}while(seleccion>0 && seleccion <=5);
+		
+		
+		
+	}
+
+}

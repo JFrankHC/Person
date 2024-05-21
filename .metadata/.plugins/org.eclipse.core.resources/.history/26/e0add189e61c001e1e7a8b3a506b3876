@@ -1,0 +1,45 @@
+package com;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+
+public class Practica {
+	public static void main(String[] args) {
+		
+     String linea= "";
+     int n;
+     
+     String[] dia = { "uno", "dos", "tres", "cuatro","cinco", "seis", "siete", "ocho", "nueve","diez","once","doce", 
+				"trece", "catorce", "quince", "dieciseis", "diecisiete", "dieciocho", "diecinueve", "veite", "veintiuno", "veintidos", "veintitres",
+				"veinticuatro", "veinticinco", "veintiseis","veintisiete", "veintiocho", "veintinueve", "trinta", "treinta y uno" };
+		try {
+			
+			File fichero= new File("C:\\Users\\Jfran\\OneDrive\\Escritorio\\bloc.txt");
+			FileReader fr= new FileReader(fichero);
+			
+			BufferedReader buffer = new BufferedReader(fr);
+			while((linea=buffer.readLine()) !=null);{
+			linea=linea.substring(0, 2);
+			n=(Integer.parseInt(linea));
+			n=n-1;
+			for (int i = 0; i < n; i++) {
+				System.out.println(dia[i]);
+			}
+			
+				
+				
+				System.out.println(linea);
+				
+				}
+				
+			
+		}	catch(Exception ex) {
+			System.out.println("Error");
+			ex.printStackTrace();
+		}
+			}
+	}
+
+	
+

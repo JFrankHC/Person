@@ -1,0 +1,15 @@
+package com;
+
+public class ej6 {
+	public static void main(String[] args) {
+		double inv = 1000;
+		// double total;
+		for (int i = 0; i < 12; i++) {
+
+			inv = inv * 1.02;
+
+		}
+		System.out.println("El total recibido en un año es de: " + inv);
+	}
+
+}

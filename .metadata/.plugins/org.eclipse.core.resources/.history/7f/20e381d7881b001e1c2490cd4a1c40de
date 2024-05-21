@@ -1,0 +1,27 @@
+package com;
+
+import java.util.Scanner;
+
+public class ej8 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Teclea el numero: ");
+		int i = sc.nextInt();
+		System.out.println("Teclea otro numero: ");
+		int j = sc.nextInt();
+		
+		if(i<j) {
+		
+		for ( i = 0; i <= j; i++) {
+			System.out.println(i);
+		}
+		}
+		else {
+			for ( j = 0; j <= i; j++) {
+				System.out.println(j);
+			}
+		}
+	}
+
+}

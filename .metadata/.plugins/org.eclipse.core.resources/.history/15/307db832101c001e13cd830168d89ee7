@@ -1,0 +1,22 @@
+package com;
+
+import java.util.Arrays;
+
+public class Principal {
+	public static void main(String[] args) {
+		
+		//crear un array de 2 dimensiones
+		String[][] matriz = new String [4] [5];
+		
+		//llenar manualmente la matriz
+		matriz[0][0] = "A";
+		matriz[0][1] = "B";
+		matriz[0][2] = "C";
+		matriz[0][3] = "D";
+		matriz[0][4] = "E";
+		
+		System.out.println(Arrays.deepToString(matriz));
+		
+	}
+
+}

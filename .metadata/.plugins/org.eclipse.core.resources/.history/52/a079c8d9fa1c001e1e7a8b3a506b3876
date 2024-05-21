@@ -1,0 +1,46 @@
+package com;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class Principal {
+	public static void main(String[] args) {
+		
+		String texto= "Lectura de archivos con Java";
+		String linea= "";
+		
+		try {
+			
+			File fichero= new File("C:\\Users\\Jfran\\Desktop\\documen.txt");
+			FileReader fr= new FileReader(fichero);
+			//File fichero1= new File("C:\\Users\\Jfran\\OneDrive\\Escritorio\\bloce.txt");
+			//FileWriter lapiz =new FileWriter(fichero1);
+			
+			BufferedReader buffer = new BufferedReader(fr);
+			while((linea=buffer.readLine()) !=null);{
+				
+				System.out.println(linea);
+			}
+
+			
+			
+			
+			//			FileWriter lapiz =new FileWriter(fichero);
+//			
+//			lapiz.write(texto);
+//			
+//			lapiz.close();//Debe cerrarse el flujo de 
+//			
+			
+		}catch(Exception ex) {
+			System.out.println("Error");
+			ex.printStackTrace();
+		}
+		
+		
+		
+	}
+
+}

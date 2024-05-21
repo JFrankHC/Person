@@ -1,0 +1,51 @@
+package com;
+
+import java.util.Scanner;
+
+public class Principal5 {
+	public static void main (String[] args) {
+		
+		  Scanner sc = new Scanner(System.in);
+		  Scanner scc = new Scanner(System.in);
+		 
+		  
+		  System.out.println("Ingresa el precio");
+		  Double Precio = sc.nextDouble();
+		  System.out.println("Ingresa el tipo A o B");
+		  String tipo= scc.next();
+		  
+		  
+		  if(tipo =="A") {
+			  System.out.println("Ingresa el tamaño 1 o 2");
+			  Double tamaño = sc.nextDouble();
+			  if (tamaño==1) {
+			  Precio= Precio+.20;
+		  }
+			  else if (tamaño==2) {
+				  Precio= Precio+.30;
+			  }
+			  else {
+				  System.out.println("Tamaño incorrecto");
+			  }
+			  }
+		  if(tipo =="B") {
+			  System.out.println("Ingresa el tamaño 1 o 2");
+			  Double tamaño = sc.nextDouble();
+			  if (tamaño==1) {
+			  Precio= Precio-.30;
+		  }
+			  else if (tamaño==2) {
+				  Precio= Precio-.50;
+			  }
+			  else {
+				  System.out.println("Tamaño incorrecto");
+			  }
+			  }
+		  else {
+			  System.out.println("Tipo incorrecto");
+		  }
+		
+		  
+
+}
+}
